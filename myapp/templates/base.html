@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+</head>
+<body>
+    <header class="column">
+        <h1>Jack T. Oulund</h1>
+        <nav>
+            <li><a href="{{url_for('home')}}"><h4>Hjem</h4></a></li>
+            <li><a><h4>Opgaver</h4></a></li>
+            <li><a><h4>Emner</h4></a></li>
+            <li><a><h4>Kontakt</h4></a></li>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
