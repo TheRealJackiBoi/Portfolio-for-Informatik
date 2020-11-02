@@ -25,6 +25,17 @@ main {
     overflow-x: hidden;
     
 }
+main h2 {
+    margin-top: 0px;
+}
+main .homepic {
+    overflow: hidden;
+    width: 100%;
+    max-height: 50rem;
+    border-radius: 8px;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

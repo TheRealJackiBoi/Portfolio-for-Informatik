@@ -1,0 +1,33 @@
+#profile_pic {
+    border-radius: 100%;
+    max-width: 15rem;
+    max-height: 15rem;
+    display: flex;
+    margin: 2rem auto;
+    
+}
+
+.fa {
+    font-size: 32px;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: #555;
+}
+
+#kontakt-inf {
+    width: 20%;
+    margin: 0 auto;
+    
+}

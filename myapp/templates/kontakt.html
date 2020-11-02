@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Kontakt{% endblock %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/kontakt.css') }}">
+<h2>Kontakt</h2>
+
+<img id="profile_pic" src="{{url_for('static', filename='img/profile.png')}}" alt="profil billede">
+
+<div id="kontakt-inf">
+<li><a href="http://https://github.com/TheRealJackiBoi"><i style="font-size:24px" class="fa fa-github"></i><span> GitHub</span></li></a>
+<li><a href="mailto:jack@oulund.dk"><i style="font-size:24px" class="fa fa fa-envelope-square"></i><span> Mail</span></li></a>
+<li><a href="http://"><i style="font-size:24px" class="fa fa-github"></i><span> GitHub</span></li></a>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
