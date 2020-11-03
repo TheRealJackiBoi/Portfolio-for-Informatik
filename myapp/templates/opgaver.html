@@ -2,7 +2,25 @@
 {% block title %}Opgaver{% endblock %} 
 {% block content %}
 <h2>Opgaver</h2>
-<div class="card">hello</div>
-<div class="card">hello</div>
-<div class="card">hello</div>
+<div class="card">
+    <img class="card-img" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+
+    <div class="card-content">
+        <h1>Hello</h1>
+        <p>This My First Project</p>
+    </div>
+
+</div>
+
+
+<div class="card">
+    <img class="card-img" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+</div>
+<div class="card">
+    <img class="card-img" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+</div>
+<div class="card">
+    <img class="card-img" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+</div>
+
 {% endblock %}
