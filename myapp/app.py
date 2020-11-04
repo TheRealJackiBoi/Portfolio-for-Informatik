@@ -1,6 +1,11 @@
 from flask import Flask,redirect,url_for,render_template,request
+from flask_sqlalchemy import SQLAlchemy
 
 app=Flask(__name__)
+app.config['SECRET_KEY'] = 'GOSay1LoveChu'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///my_database.db'
+
+db = SQLAlchemy(app)
 
 @app.route('/',methods=['GET','POST'])
 def home():
