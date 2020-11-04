@@ -1,6 +1,48 @@
-{% extends "base.html" %}
-{% block title %}Emner{% endblock %}
-
+{% extends "base.html" %} 
+{% block title %}Emner{% endblock %} 
 {% block content %}
 <h2>Emner</h2>
+<div class="card-container">
+<!--HTML CSS Emner-->    
+<div class="card">
+    <img class="" src="{{url_for('static', filename='img/html-css-js.jpg')}}" alt="card picture">
+
+    <div class="card-content">
+        <h1>Hjemmesider</h1>
+        <p>Første emne vi havde om var Hjemmesider, som omhandlede 
+            hovedsprogene HTML, CSS og en lille smule JS</p>
+    </div>
+
+</div>
+
+
+<div class="card">
+<img class="" src="{{url_for('static', filename='img/html-css-js.jpg')}}" alt="card picture">
+</div>
+<div class="card">
+    <img class="" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+</div>
+<div class="card">
+    <img class="" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+</div>
+<div class="card">
+    <img class="" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+    </div>
+    <div class="card">
+        <img class="" src="{{url_for('static', filename='img/html-css-js.jpg')}}" alt="card picture">
+    
+        <div class="card-content">
+            <h1>Hjemmesider</h1>
+            <p>Første emne vi havde om var Hjemmesider, som omhandlede 
+                hovedsprogene HTML, CSS og en lille smule JS</p>
+        </div>
+    
+    </div>
+    <div class="card">
+        <img class="" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+    </div>
+    <div class="card">
+        <img class="" src="{{url_for('static', filename='img/profile.png')}}" alt="card picture">
+    </div>
+</div>
 {% endblock %}

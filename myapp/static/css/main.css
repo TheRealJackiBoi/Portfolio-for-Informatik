@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -17,13 +19,14 @@ h2 {
 }
 
 main {
-    height: 70%;
+    height: 72.5%;
     width: 60%;
     position: absolute;
-    top: 17.5rem;
+    top: 25%;
     overflow: scroll;
     overflow-x: hidden;
-    
+    margin-top: 0.65%;
+    padding-top: 1%;
 }
 main h2 {
     margin-top: 0px;
@@ -40,11 +43,12 @@ main .homepic {
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
     border-radius: 8px;
+    
   }
    
   /* Handle */
@@ -65,7 +69,8 @@ header {
     width: 60%;
     z-index: 10;
     background-color: white;
-    max-height: 30%;
+    height: 22.5%;
+    box-shadow: 0 6px 4px -4px #555;
 }
 
 header h1 {
@@ -78,6 +83,8 @@ header h1 {
 nav {
     top: 15px;
     max-height: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -98,32 +105,88 @@ nav li a:hover {
     font-size: large;
 }
 
-.card {
-    display: inline-block;
-    height: 12.5rem;
-    width: 10rem;
-    border: 1px solid black;
-    box-shadow: 2.5px 5px 10px #555;
-    margin: 2rem;
-    border-radius: 10px;
-    padding: 0;
-    position: relative;
-    top: 1rem;
+.card-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.card .card-img {
+.card {
+    display: flex;
+    flex: 1 0 200px;
+    box-sizing: border-box;
+    margin: 1rem .5em;
+    flex-flow: column;
+    border: 1px solid black;
+    box-shadow: 2.5px 5px 10px #555;
+    border-radius: 10px;
+    padding: 0;
+    flex-grow: 1;
+    
+    max-height: 20%;
+}
+
+.card img {
+    object-fit: cover;
+    display: block;
     width: 100%;
-    height: 40%;
-    border-radius: 10px 10px 0 0;
-    display: inline-block;
+    min-height: 40%;
+    max-height: 50%;
+    border-radius: 8px 8px 0 0;   
 }
 
 .card .card-content {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
     top: 40%;
-    margin-top: 2px;
+    padding: 1em;
+    
 }
+
+.card .card-content h1{
+    font-size: 24px;
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    max-height: 1rem;
+}
+
 
 
 .card:hover {
     box-shadow: 7.5px 10px 10px #555;
+}
+
+
+
+@media screen and (min-width: 40em) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   }
+ 
+    .card {
+        flex: 0 1 calc(50% - 1em);
+        max-width: calc(50% -  1em);
+    }
+}
+ 
+@media screen and (min-width: 60em) {
+    .card-container {
+   }
+     
+    .card {
+        flex: 0 1 calc(25% - 1em);
+        max-width: calc(25% - 1em);
+     }
+}
+ 
+ 
+@media screen and (min-width: 52em) {
+    .main {
+        
+    }
 }
