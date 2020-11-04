@@ -19,10 +19,10 @@ h2 {
 }
 
 main {
-    height: 72.5%;
+    height: 65%;
     width: 60%;
     position: absolute;
-    top: 25%;
+    top: 30%;
     overflow: scroll;
     overflow-x: hidden;
     margin-top: 0.65%;
@@ -69,7 +69,7 @@ header {
     width: 60%;
     z-index: 10;
     background-color: white;
-    height: 22.5%;
+    height: 25%;
     box-shadow: 0 6px 4px -4px #555;
 }
 
@@ -82,7 +82,7 @@ header h1 {
 
 nav {
     top: 15px;
-    max-height: 3rem;
+    height: 5rem;
     display: flex;
     flex-wrap: nowrap;
 }
