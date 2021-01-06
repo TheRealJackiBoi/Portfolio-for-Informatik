@@ -1,2 +1,10 @@
 {
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Portfolio-for-Informatik}/myapp/my_database.db",
+            "name": "Portfolie databas"
+        }
+    ]
 }
