@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Hjemmesider{% endblock %}
+
+{% block content %}
+<div id="hjemmesider">
+    <h2>Hjemmesider</h2>
+	<div>
+		<h3>HTML</h3>
+		<p>HTML er et opmærkningssprog. HTML står for Hyper Text Markup Language. Markup betyder at opmærke, og html definerer netop indhold på websider.</p>
+
+        <img style="width: 20vh; height: auto;" src="{{url_for('static', filename='img/emne-hjemmesider/html-example.png')}}" alt="Html eksempel">
+        <p>Det her er et eksempel på simpelt eksempel på hvordan noget skrevet i html ville se ud. </p>
+	</div>
+
+	<div>
+		<h3>CSS</h3>
+		<p>CSS også kendt som <i>Cascading Style Sheets</i>, er et til sprog der bruges til at lave hjemmesider. CSS bruges til at style din hjemmeside. Du kan fx. gøre din tekst <span class="blue">blå</span>.</p>
+        <img style="width: 20vh; height: auto;" src="{{url_for('static', filename='img/emne-hjemmesider/css-example.png')}}" alt="Html eksempel">
+        <p>Det her er et eksempel på simpelt eksempel på hvordan noget skrevet i css ville se ud. Det, som det her stykke css gør, er at det placerer teksten der er i body tagget i html'en i midten af siden.</p>
+	</div>
+
+
+    <div>
+        <h3>Design</h3>
+        <div>
+            <h4> Gestaltlovene</h4>
+            <p>
+                Gestaltlovene beskriver hvordan vores hjerner opfatter sammenhænge i verdenen, og prøver at få det til give mening. <br>
+                På denne side kommer du til at læse om hvordan du kan bruge lovene, til at gøre din hjemmeside mere brugervenlig og overskuelig. 
+            </p>
+        </div>
+        <div>
+            <h5>Gestalt skaber overblik</h5>
+            <p>
+                Brugen af lovene på din side, giver brugeren overblik på din side. De hjælper med at organisere informationer, så personen lettere kan overskue indholdet.<br><br>
+                Gestalt lovene bliver altså brugt til at få funktionalitet og design til "at gå hånd i hånd," i stedet for at modstrides.  
+            </p>
+            <p>For at læse mere om gestaltlovene klik <a href="https://www.nielsgamborg.dk/?p=gestaltlovene">her.</a></p>
+        </div>
+    </div>
+
+    <div>
+        <h4>KISS og FTF</h4>
+        <p><b>KISS</b> og <b>FTF</b> begge to design principper, som er god at holde sig til.</p>
+        <p><b>KISS</b> står for "Keep it simple stupid," som i bund og grund bare betyder at man ikke skal gøre det alt for kompliceret for brugeren, og at siden skal holdes brugervenlig for alle.
+        <br>Her kommer <b>FTF</b> godt ind i billedet, da det står for "First thing first." Det handler også bare om at man skal have det vigtigste først så det ikke bliver overset.</p>
+    </div>
+</div>
+{% endblock %}

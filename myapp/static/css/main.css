@@ -1,7 +1,7 @@
 
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     display: block;
@@ -9,13 +9,16 @@ body {
     overflow: hidden;
 }
 
-h3 {
-    font-weight: 300;
-    color: lightgrey;
-}
-h4 {font-weight: 300;}
 h2 {
     font-size: 30;
+}
+
+h3 {
+    font-weight: bolder;
+}
+h4 {
+    font-weight: bold;
+    color: rgb(66, 66, 66);
 }
 
 main {
@@ -194,4 +197,9 @@ nav li a:hover {
 iframe {
     width: 100%;
     height: 100%;
+}
+
+
+#hjemmesider div {
+    padding-bottom: 2vh;
 }

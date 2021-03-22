@@ -19,10 +19,16 @@ def emner():
 
    return render_template('emner.html',)
 
-
+#subpages af emner
 @app.route("/emner/laeringsspil")
 def laeringsspil():
    return render_template('/Emner/laeringsspil.html',)
+
+@app.route("/emner/hjemmesider")
+def hjemmesider():
+   return render_template('/Emner/hjemmesider.html',)
+
+
 
 
 @app.route('/kontakt',methods=['GET','POST'])

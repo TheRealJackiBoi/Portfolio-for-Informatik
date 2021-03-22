@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Hjemmesider{% endblock %}
+
+{% block content %}
+<h1>Modeltogbane</h1>
+
+        <p>Vi fik til opgave at lege rundt med noget kode til modeltogene, og få dem til at gøre nogle forskellige ting.<br>
+        Til hjælp fik vi et hjælpe ark, som viste de forskellige ting man kunne få toget til at gøre vedhjælp af binær kode. 
+        Arket havde nogle variable, som fx. var adressen på toget, så det kunne være andre toge man kaldte.
+        <br> 
+        vores kode <a href="/filer/Modeltog.ino" download="Modeltog.ino">her</a>
+        <br>
+        <br>
+        <br>
+        Dette er <a href="/filer/Communication_Guide_V5 (1).pdf" download="Communication_Guide_V5.pdf">Arket</a>
+        <br>
+        <br>
+        <br>
+        </p>
+        <img
+        src="/images/adresse.png"
+        style="position: absolute;"
+      />
+        
+        <p style="position: relative; left: 550px;"> Den starter her med en pre-ample, som fortæller det er en ny besked.<br></p>
+        <p style="position: relative; left: 550px; top: 243px;">Der efter kommer der en seperernde bit, der fortæller det er en ny ting der sker.<br></pstyle="position: relative; left: 550px;">
+        <p style="position: relative; left: 550px; top: 255px;">Der efter kommer der adressen, som er en short adress, og derfor starter den med et 0, da adressen kun er 7 bit lang.<br></p>
+        <p style="position: relative; left: 550px; top: 355px;">Her kommer der hvordan man sætter farten, først kommer der et 0 og et 1, som betyder det er fart og retning der er tale om.<br> Så bester man enten om det er fremad(1) eller bagud(0) herefter kommer der et 0, som fortæller det er hastigheden nu.<br>
+        det er sår en 4 bit hastighed man kan sætte den til. Derfor kan farten højest bliver 31. </p>
+        
+
+{% endblock %}
