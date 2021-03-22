@@ -23,7 +23,6 @@ h4 {
 
 main {
     height: 75vh;
-    width: 60%;
     margin: 0 auto;
     overflow: scroll;
     overflow-x: hidden;
@@ -68,7 +67,6 @@ header {
     margin: 0 auto;
     position: relative;
     padding: 1rem;
-    width: 60%;
     z-index: 10;
     background-color: white;
     box-shadow: 0 6px 4px -4px #555;
@@ -192,6 +190,34 @@ nav li a:hover {
     }
 }
 
+
+@media only screen  
+  and (max-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+   { 
+
+    main {
+        width: 100vw;
+    }
+    
+    header {
+        width: 100%;
+    }
+
+}
+@media only screen  
+  and (min-width: 812px) 
+   { 
+
+    main {
+        width: 60vw;
+    }
+    
+    header {
+        width: 60%;
+    }
+
+}
 
 
 iframe {
