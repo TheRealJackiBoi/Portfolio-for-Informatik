@@ -193,7 +193,6 @@ nav li a:hover {
 
 @media only screen  
   and (max-width: 900px) 
-  and (-webkit-min-device-pixel-ratio: 3)
    { 
 
     main {
