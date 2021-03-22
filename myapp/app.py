@@ -1,12 +1,7 @@
 from flask import Flask,redirect,url_for,render_template,request
-from flask_sqlalchemy import SQLAlchemy
 
 app=Flask(__name__)
 app.config['SECRET_KEY'] = 'GOSay1LoveChu'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///my_database.db'
-app.config['SQLALCHEMY_TRACK_MODFICATIONS'] = False
-
-db = SQLAlchemy(app)
 
 @app.route('/',methods=['GET','POST'])
 def home():
@@ -22,7 +17,13 @@ def opgaver():
 @app.route('/emner',methods=['GET','POST'])
 def emner():
 
-   return render_template('emner.html')
+   return render_template('emner.html',)
+
+
+@app.route("/emner/laeringsspil")
+def laeringsspil():
+   return render_template('/Emner/laeringsspil.html',)
+
 
 @app.route('/kontakt',methods=['GET','POST'])
 def kontakt():
