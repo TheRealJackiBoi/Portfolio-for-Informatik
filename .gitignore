@@ -1,2 +1,4 @@
 # Don't track content of these folders
 Lib/site-packages/
+Scripts/
+__pycache__/
