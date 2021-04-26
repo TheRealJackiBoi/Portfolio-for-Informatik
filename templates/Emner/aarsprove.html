@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Årsprøve{% endblock %}
+
+{% block content %}
+
+<h1>Corona hjemmeside</h1>
+<p>Til vores årsprøve der var i slutningen af 2.G, fik vi til opgave at lave en hjemmeside, der fremviste noget corona data.</p>
+<p>Her valgte min gruppe og jeg at bruge html, css, javascript og php til at lave siden. Derudover brugte vi også nogle biblioteker såsom 
+    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>(til css) og <a href="https://www.chartjs.org/" target="_blank">Chart.js</a> (til grafen.)</p>
+    <p>Klik på billedet for at se siden</p>
+
+<a href="http://oulund.com/jack/corona" target="_blank">
+<figure>
+    <img class="img-fullwidth" src="{{url_for('static', filename='img/corona-side.png')}}" alt="Corona hjemmesiden">
+</figure>
+</a>
+{% endblock %}

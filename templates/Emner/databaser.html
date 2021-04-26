@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Databaser{% endblock %}
+
+{% block content %}
+
+<h3>Her er nogle begreber om databaser</h3>
+
+<p>Entitetsklasser er klasser som kan gives til entiteter/attributter i et E/R Diagram, f.eks. kan en entitsklasse v&aelig;re &ldquo;kunde&rdquo;, som bliver givet til entiteten &ldquo;S&oslash;ren&rdquo; . Denne entitetsklasse har s&aring; attributter der bliver udfyldt med S&oslash;rens informationer, s&aring;som navn, gade, kundenr.</p>
+<p><br></p>
+<p>En relation er en forbindelse der sammenkobler entitetsklasser i et E/R Diagram. S&aring;som kan man have en relation mellem to entitetsklasser, kunde og ordrer, dette er en &ldquo;1 til mange&rdquo; relation, hvor 1 kunder kan have mange ordrer, men 1 ordre kan kun have 1 kunde.&nbsp;</p>
+<p><br></p>
+<p>Attributter beskriver entiteter. F.eks kan entities klassen kunde, have attributterne kundenr, navn, gade, osv.</p>
+<p><br></p>
+<p>Tabeller er en masse data, der er sorteret, der bruges i databaser. &nbsp;F.eks.vil virksomheder have tabeller over kunder, varer osv, hvor fx en kunde tabel vil indeholde kategorier som kundenummer, navn, adresse og s&aring; videre. Disse tabeller bliver koblet sammen i databaser, gennem relationer.</p>
+<p><br></p>
+<p>Prim&aelig;rn&oslash;glen er den attribut der identificere en enkelt entitet i databasen. F.eks. kan dette v&aelig;re et kundenummer, som identificerer den enkelte kunde, med navn og gade, osv, alts&aring; n&aring;r man bruger kundenr/prim&aelig;rn&oslash;glen, f&oslash;lger resten af informationerne der er forbundet med . Prim&aelig;rn&oslash;gler skal v&aelig;re unikke, derfor virker navne ikke, og de skal ikke &aelig;ndre sig, derfor virker telefonnumre ikke.</p>
+
+
+<a href="{{url_for('static', filename='files/AccesDatabase.zip')}}">Access Database</a>
+<br><a href="{{url_for('static', filename='files/database_aflevering.zip')}}">SQL Database</a>
+
+<h4>Nogle resourcer omkring databaser</h4>
+<a href="https://www.w3schools.com/sql/">w3schools sql</a>
+<br><a href="https://itbeux.systime.dk/index.php?id=1051">https://itbeux.systime.dk/index.php?id=1051</a>
+<br><a href="https://itbeux.systime.dk/index.php?id=1052">https://itbeux.systime.dk/index.php?id=1052</a>
+<br><a href="https://informatik.systime.dk/index.php?id=1071">https://informatik.systime.dk/index.php?id=1071</a>
+<br><a href="https://it.systime.dk/?id=817">https://it.systime.dk/?id=817</a>
+<br><a href="https://informatikbeux.systime.dk/?id=1053">https://informatikbeux.systime.dk/?id=1053</a>
+
+{% endblock %}
+
+
+
+
+
+

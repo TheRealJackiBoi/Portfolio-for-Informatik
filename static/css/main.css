@@ -228,3 +228,13 @@ iframe {
 #hjemmesider div {
     padding-bottom: 2vh;
 }
+
+div {
+    padding-bottom: 2vh;
+}
+
+.img-fullwidth {
+    width: 100%;
+    height: auto;
+    
+}

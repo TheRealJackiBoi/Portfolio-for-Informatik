@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Hjemmesider{% endblock %}
+{% block title %}Arduino Tog{% endblock %}
 
 {% block content %}
 <h1>Modeltogbane</h1>
@@ -8,19 +8,21 @@
         Til hjælp fik vi et hjælpe ark, som viste de forskellige ting man kunne få toget til at gøre vedhjælp af binær kode. 
         Arket havde nogle variable, som fx. var adressen på toget, så det kunne være andre toge man kaldte.
         <br> 
-        vores kode <a href="/filer/Modeltog.ino" download="Modeltog.ino">her</a>
+        vores kode <a href="{url_for('static', filename='files/Modeltog.ino')}}" download="Modeltog.ino">her</a>
         <br>
         <br>
         <br>
-        Dette er <a href="/filer/Communication_Guide_V5 (1).pdf" download="Communication_Guide_V5.pdf">Arket</a>
+        Dette er <a href="{url_for('static', filename='files/Communication_Guide_V5.pdf')}}" download="Communication_Guide_V5.pdf">Arket</a>
         <br>
         <br>
         <br>
         </p>
+        <a href="{{url_for('static', filename='img/adresse.png')}}">
         <img
-        src="/images/adresse.png"
+        src="{{url_for('static', filename='img/adresse.png')}}"
         style="position: absolute;"
-      />
+        />
+        </a>
         
         <p style="position: relative; left: 550px;"> Den starter her med en pre-ample, som fortæller det er en ny besked.<br></p>
         <p style="position: relative; left: 550px; top: 243px;">Der efter kommer der en seperernde bit, der fortæller det er en ny ting der sker.<br></pstyle="position: relative; left: 550px;">
