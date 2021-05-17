@@ -2,6 +2,14 @@
 {% block title %}Eksamensprojekt{% endblock %}
 
 {% block content %}
+
 <h2>Dit Køleskab</h2>
-<a href="https://fridge-app-kd9g5.ondigitalocean.app/" target="_blank">Klik her</a>
+<p>Klik <a href="https://fridge-app-kd9g5.ondigitalocean.app/" target="_blank">her</a> for produkthjemmesiden</p>
+<p>Klik <a href="{{url_for('static', filename='files/Informatik EKSAMEN KODE.zip')}}">her</a> for kildekode til produktet</p>
+<p>Klik <a href="{{url_for('static', filename='files/Informatik - EKSAMENS SYNOPSE.pdf')}}" target="_blank">her</a> for at downloade synopsen</p>
+<p>Klik <a href="{{url_for('static', filename='files/Informatik - Rapport.pdf')}}" target="_blank">her</a> for at downloade rapporten</p>
+
+<img src="{{url_for('static', filename='img/Fridge-sticker-final.png')}}" alt="" 
+style="width: 100%; height:auto; left: -10px; position: relative;">
+
 {% endblock %}
